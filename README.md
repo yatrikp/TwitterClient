@@ -40,5 +40,5 @@ Screenshots
 
 Please click on the image below to see the demo!!!
 
-
+[![ScreenShot](https://github.com/yatrikp/TwitterClient/blob/master/Twitter-Client-1.JPG?raw=true)](http://player.vimeo.com/video/107782533)
  
