@@ -1,0 +1,40 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/card_background_white"
+    tools:context="${relativePackage}.${activityClass}" >
+
+    <RelativeLayout
+        android:id="@+id/rl_tweet_container"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_alignParentBottom="true"
+        android:background="@android:color/white" >
+
+        <TextView
+            android:id="@+id/et_tweetbox"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="10dp"
+            android:hint="What's happening?" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/rl_timeline_container"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_above="@id/rl_tweet_container" >
+
+        <eu.erikw.PullToRefreshListView
+            android:id="@+id/lvTweets"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:fadingEdge="vertical"
+            android:scrollbarStyle="outsideOverlay" />
+    </RelativeLayout>
+
+</RelativeLayout>
